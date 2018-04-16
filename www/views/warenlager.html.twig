@@ -1,0 +1,35 @@
+{% extends 'templates/app.html.twig'%}
+
+{% block style %}
+<link rel="stylesheet" type="text/css"  href="{{ asset('warenlager.css','css') }}" />
+{% endblock %}
+
+{% block main %}
+<h1>Waren Lager </h1>
+	<form  method = 'post' action="{{ url('postwaren') }}">
+
+        <label for="name"> Bezeichnung: <input name="name" id="name" type="text"> </label>
+
+        <label for="amount">  Menge: <input name="amount" id="amount" type="number"> </label>
+
+        <label for=" description">Bescheibung <input name="description" id="description" type="text" > </label>
+
+        <label for="type">   Art:
+            <select name="type" id="type">
+                {% for types in type %}
+
+                    <option>
+                        {{ types.Namen }}
+                    </option>
+
+                {% endfor %}
+            </select>
+        </label>
+
+        <label for="seller"> Hersteller: <input name="seller" id="seller" type="text"></label>
+
+
+	<p><button type="submit"> Einfügen</button> </form>
+    {{ dump(test) }}
+
+{%endblock%}

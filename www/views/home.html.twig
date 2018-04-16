@@ -1,0 +1,14 @@
+{% extends 'templates/app.html.twig'%}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css"  href="{{ asset('home.css','css') }}" />
+{% endblock %}
+
+{% block main %}
+
+<h1>Home </h1>
+	<form > Name: <input type="text">  Paswort: <input type="password"></form>
+
+    <p><button type="submit"> Login</button> </form>
+
+{%endblock%}

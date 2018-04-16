@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+        
+        {% block style %}
+        <link rel="stylesheet" type="text/css"  href="{{ asset('style.css','css') }}" />
+        {% endblock %}
+	</head>
+	<body class="main">
+        <nav>
+             <ul>
+                 <li for="home"><a class="home" href="{{ url('home') }}">Home</a></li>
+                 <li for="warenlager"><a class="warenlager" href="{{ url('warenlager') }}">Warenlager</a></li>
+             </ul>
+        </nav>
+
+   
+		<div class="container">
+			{% block main %} {% endblock %}
+		</div>
+	</body>
+</html>

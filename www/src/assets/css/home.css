@@ -1,0 +1,48 @@
+
+ul{
+
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+li{
+    display: inline-grid;
+}
+
+nav{
+    list-style-type: none;
+    background-color: chocolate;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+
+}
+
+li a{
+    text-decoration: none;
+    padding: 8px 16px;
+
+    text-align: center;
+    color: black;
+}
+
+li a:hover{
+    background-color: darkred;
+    color: white;
+}
+
+h1{
+    margin: 0;
+
+}
+
+.home{
+    background-color: darkred;
+    color: white;
+}
+
